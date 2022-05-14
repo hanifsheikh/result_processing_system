@@ -8,7 +8,7 @@
       <input :name="'letter_grade_'+key" type="text" class="form-control" placeholder="Letter Grade">
     </div>
     <div class="col">
-      <input :name="'grade_point_'+key" type="number" class="form-control" placeholder="Grade Point">
+      <input :name="'grade_point_'+key" type="number" pattern="[0-9]+([\.,][0-9]+)?" step="0.01" class="form-control" placeholder="Grade Point">
     </div>
   </div>
   <div class="py-1"></div>
